@@ -29,6 +29,7 @@ namespace RailMenuDemo
         {
             InitializeComponent();
             SetTitleBar();
+            NavView.Loaded += (s, e) => NavFrame.Navigate(typeof(Pages.AboutPage));
         }
 
         // Handle navigation when a menu item is clicked
@@ -38,10 +39,10 @@ namespace RailMenuDemo
             var tag = args.InvokedItemContainer?.Tag?.ToString();
             switch (tag)
             {
-                //case "Home": NavFrame.Navigate(typeof(Pages.HomePage)); break;
-                //case "Browse": NavFrame.Navigate(typeof(Pages.BrowsePage)); break;
-                //case "Models": NavFrame.Navigate(typeof(Pages.ModelsPage)); break;
-                //case "Settings": NavFrame.Navigate(typeof(Pages.SettingsPage)); break;
+                case "Home": NavFrame.Navigate(typeof(Pages.AboutPage)); break;
+                case "Browse": NavFrame.Navigate(typeof(Pages.EmptyPage)); break;
+                case "Models": NavFrame.Navigate(typeof(Pages.EmptyPage)); break;
+                case "Settings": NavFrame.Navigate(typeof(Pages.EmptyPage)); break;
             }
         }
 
@@ -62,8 +63,8 @@ namespace RailMenuDemo
         // This method is used to get the tag for a given page type, this is used in the NavFrame_Navigated method to keep the correct item highlighted after back-navigation, you can adjust this method to match your own page types and tags
         private static string? GetTagForPage(Type page) => page.Name switch
         {
-            //nameof(Pages.HomePage) => "Home",
-            //nameof(Pages.BrowsePage) => "Browse",
+            nameof(Pages.AboutPage) => "Home",
+            //nameof(Pages.EmptyPage) => "Browse",
             //nameof(Pages.ModelsPage) => "Models",
             //nameof(Pages.SettingsPage) => "Settings",
             _ => null

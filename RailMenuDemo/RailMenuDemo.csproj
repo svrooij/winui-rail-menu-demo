@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
@@ -13,9 +13,6 @@
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <ItemGroup>
-    <None Remove="Styles\NavigationView.xaml" />
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -50,11 +47,6 @@
 	  <PackageReference Include="CommunityToolkit.WinUI.Extensions" Version="8.2.251219" />
 	  <PackageReference Include="WinUIEx" Version="2.9.0" />
   </ItemGroup>
-  <!--<ItemGroup>
-    <Page Update="Styles\NavigationView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>-->
 
   <!--
     Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution
