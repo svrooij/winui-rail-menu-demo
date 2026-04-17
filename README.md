@@ -42,8 +42,8 @@ A rail menu is a compact, vertically-aligned navigation strip that sits on the l
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/svrooij/dotnet-rail-menu-demo.git
-   cd dotnet-rail-menu-demo
+   git clone https://github.com/svrooij/winui-rail-menu-demo.git
+   cd winui-rail-menu-demo
    ```
 
 2. **Open the solution** — open `RailMenuDemo.slnx` in Visual Studio.
@@ -91,7 +91,6 @@ A rail menu is a compact, vertically-aligned navigation strip that sits on the l
 | [Microsoft.WindowsAppSDK](https://www.nuget.org/packages/Microsoft.WindowsAppSDK) | 1.8 | WinUI 3 runtime & controls |
 | [CommunityToolkit.WinUI.Animations](https://www.nuget.org/packages/CommunityToolkit.WinUI.Animations) | 8.2 | Implicit animations in the style |
 | [CommunityToolkit.WinUI.Extensions](https://www.nuget.org/packages/CommunityToolkit.WinUI.Extensions) | 8.2 | `FontIcon` markup extension and visual extensions |
-| [WinUIEx](https://www.nuget.org/packages/WinUIEx) | 2.9 | `WindowEx` base class for easier window management |
 
 ## Blog post
 
